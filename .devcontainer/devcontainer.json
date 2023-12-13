@@ -1,0 +1,89 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/miniconda
+{
+	"name": "case-navegacao-interior",
+	"build": { 
+		"context": "..",
+		"dockerfile": "Dockerfile"
+	},
+	"workspaceFolder": "/workspaces/case-navegacao-interior",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	"mounts": [
+		"source=devcontainer-bashhistory,target=/cmdhistory,type=volume"
+	],
+
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "python --version",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"alefragnani.Bookmarks",
+				"BeardedBear.beardedtheme",
+				"bradlc.vscode-tailwindcss",
+				"cschlosser.doxdocgen",
+				"DavidAnson.vscode-markdownlint",
+				"dbaeumer.vscode-eslint",
+				"donjayamanne.githistory",
+				"eamodio.gitlens",
+				"ecmel.vscode-html-css",
+				"esbenp.prettier-vscode",
+				"formulahendry.auto-rename-tag",
+				"golang.go",
+				"Gruntfuggly.todo-tree",
+				"humao.rest-client",
+				"janjoerke.jenkins-pipeline-linter-connector",
+				"jeff-hykin.better-cpp-syntax",
+				"johnpapa.vscode-peacock",
+				"mechatroner.rainbow-csv",
+				"ms-azuretools.vscode-docker",
+				"ms-python.black-formatter",
+				"ms-python.isort",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"ms-toolsai.vscode-jupyter-slideshow",
+				"ms-vscode-remote.remote-containers",
+				"ms-vscode-remote.remote-ssh",
+				"ms-vscode-remote.remote-ssh-edit",
+				"ms-vscode-remote.remote-wsl",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools",
+				"ms-vscode.live-server",
+				"ms-vscode.makefile-tools",
+				"ms-vscode.powershell",
+				"ms-vscode.remote-explorer",
+				"ms-vscode.remote-server",
+				"naumovs.color-highlight",
+				"NicolasVuillamy.vscode-groovy-lint",
+				"octref.vetur",
+				"pflannery.vscode-versionlens",
+				"PKief.material-icon-theme",
+				"redhat.vscode-yaml",
+				"svelte.svelte-vscode",
+				"tamasfe.even-better-toml",
+				"twxs.cmake",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"wix.vscode-import-cost"
+			]
+		}
+	},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "vscode",
+	"remoteEnv": {
+		"CONDA_ENV_NAME": "case-navegacao-interior",
+		"PATH": "${containerEnv:PATH}:/opt/conda/envs/case-navegacao-interior/bin"
+	}
+}
