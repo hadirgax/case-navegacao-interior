@@ -1,3 +1,4 @@
-*/data
+data
 *.pdf
-*.ipynb
+*.json
+*test*
